@@ -44,7 +44,7 @@ The project utilizes the following dependencies included in the HTML file:
 ```
 
 ### Additional Resources
-- Live online demo can be accessed at [AlphonsoMango.in](https://alphonsomango.in).
+- Live online demo can be accessed at [AlphonsoMango.in](https://jamunaalphonsomangoes.com).
 
 ## Contributing
 If you would like to contribute to this project, please fork the repository and create a pull request with your proposed changes.
