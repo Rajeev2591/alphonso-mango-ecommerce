@@ -13,24 +13,38 @@
     }
   </style>
 </head>
-<body class="flex items-center justify-center min-h-screen">
-  <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
-    <h2 class="text-3xl font-extrabold text-center mb-6 text-primary">Login to Your Account</h2>
-    <form>
-      <div class="mb-5">
-        <label for="username_email" class="block text-gray-700 font-semibold mb-2">Username or Email</label>
-        <input type="text" id="username_email" name="username_email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
-      </div>
-      <div class="mb-6">
-        <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
-        <input type="password" id="password" name="password" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
-      </div>
-      <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition">Login</button>
-    </form>
-    <p class="mt-6 text-center text-gray-600">
-      Don't have an account?
-      <a href="registration.html" class="text-primary font-semibold hover:underline">Register here</a>
-    </p>
-  </div>
+<body class="flex flex-col min-h-screen">
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-4 flex items-center">
+      <a href="index.html" class="flex items-center space-x-2">
+        <img src="assets/logo.png" alt="Jamuna Alphonso Mangoes Logo" class="h-10 w-10 object-contain" />
+        <span class="text-2xl font-bold text-primary">JamunaAlphonsoMangoes</span>
+      </a>
+    </div>
+  </header>
+  <main class="flex-grow flex items-center justify-center bg-gradient-to-br from-orange-500 to-yellow-400">
+    <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-md">
+      <h2 class="text-3xl font-extrabold text-center mb-6 text-primary">Login to Your Account</h2>
+      <form>
+        <div class="mb-5">
+          <label for="username_email" class="block text-gray-700 font-semibold mb-2">Username or Email</label>
+          <input type="text" id="username_email" name="username_email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+        </div>
+        <div class="mb-6">
+          <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+          <input type="password" id="password" name="password" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" />
+        </div>
+        <button type="submit" class="w-full bg-primary text-white py-3 rounded-lg font-semibold hover:bg-primary/90 transition">Login</button>
+      </form>
+      <p class="mt-6 text-center text-gray-600">
+        Don't have an account?
+        <a href="registration.html" class="text-primary font-semibold hover:underline">Register here</a>
+      </p>
+    </div>
+  </main>
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/+917800044091?text=Welcome%20to%20Jamuna%20Alphonso%20Mangoes!%20%F0%9F%8D%8B%F0%9F%A5%AD%0A%0Ahttps%3A%2F%2Fi.imgur.com%2Fyour-logo-image.png%0AWe're%20delighted%20to%20have%20you%20here!%20At%20Jamuna%20Alphonso%20Mangoes%2C%20our%20purpose%20is%20simple%20yet%20special%E2%80%94to%20bring%20you%20the%20finest%2C%20juiciest%2C%20and%20most%20authentic%20Alphonso%20mangoes%20straight%20from%20our%20orchards.%20Every%20mango%20is%20handpicked%20with%20care%20to%20ensure%20premium%20quality%20and%20unmatched%20flavor.%0AWhether%20you%27re%20looking%20for%20a%20refreshing%20tropical%20treat%2C%20a%20delightful%20gift%20for%20loved%20ones%2C%20or%20simply%20the%20joy%20of%20savoring%20nature%E2%80%99s%20golden%20goodness%2C%20we%20are%20here%20to%20make%20your%20experience%20exceptional.%0AFeel%20free%20to%20ask%20us%20anything%E2%80%94we%E2%80%99re%20happy%20to%20help%20you%20find%20the%20perfect%20mangoes%20to%20suit%20your%20needs!%0AHappy%20indulging%2C%20and%20welcome%20to%20a%20world%20of%20sweetness!%20%F0%9F%A5%AD%E2%9C%A8" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-50" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </a>
 </body>
 </html>
