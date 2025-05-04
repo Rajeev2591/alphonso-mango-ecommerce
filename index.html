@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Alphonso Mangoes Online | Hapus Mango – JamunaAlphonsoMangoes.com</title>
+<title>Buy Alphonso Mangoes Online | Hapus Mango – JamunaAlphonsoMangoes.com</title>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,22 +36,25 @@
 <body class="bg-white">
     <!-- Header -->
     <!-- Top Banner -->
-    <div class="bg-primary text-white text-center py-2">
-        <p>Taste the real Alphonso Mango <a href="/collections/premium-alphonso-mango-buy-online" class="underline">SHOP NOW</a></p>
-    </div>
+        <div class="bg-primary text-white text-center py-2">
+            <p>Taste the real Alphonso Mango <a href="https://alphonsomango.in/" target="_blank" rel="noopener noreferrer" class="underline">SHOP NOW</a></p>
+        </div>
 
     <!-- Header -->
     <header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-4">
             <nav class="flex items-center justify-between h-16">
                 <!-- Logo -->
-                <div class="flex items-center">
-                    <a href="/" class="text-2xl font-bold text-primary">JamunaAlphonsoMangoes.com</a>
-                </div>
+        <div class="flex items-center">
+          <a href="https://jamunaalphonsomangoes.in/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2">
+            <img src="assets/logo.png" alt="Jamuna Alphonso Mangoes Logo" class="h-10 w-10 object-contain" />
+            <span class="text-2xl font-bold text-primary">JamunaAlphonsoMangoes</span>
+          </a>
+        </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden lg:flex items-center space-x-8 relative">
-                    <a href="#" class="text-gray-700 hover:text-primary">Home</a>
+          <a href="https://jamunaalphonsomangoes.in/" target="_blank" rel="noopener noreferrer" class="text-primary font-semibold">Home</a>
                     <!-- Mangoes Dropdown -->
                     <div class="relative">
                         <button id="mangoesDropdownBtn" class="text-gray-700 hover:text-primary flex items-center space-x-1 focus:outline-none">
@@ -61,31 +64,31 @@
                         <div id="mangoesDropdown" class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg opacity-0 invisible transition-opacity z-50 p-4">
                             <ul class="space-y-3">
                                 <li>
-                                    <a href="/kesar-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
+                                    <a href="collections/kesar-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
                                         Kesar Mango
                                         <span class="block text-sm text-gray-500">From Rs. 2,499.00</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/payari-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
+                                    <a href="collections/payari-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
                                         Payari Mango
                                         <span class="block text-sm text-gray-500">From Rs. 2,000.00</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/alphonso-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
+                                    <a href="collections/alphonso-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
                                         Alphonso Mango
                                         <span class="block text-sm text-gray-500">From Rs. 1,400.00</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/devgad-alphonso-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
+                                    <a href="collections/devgad-alphonso-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
                                         Devgad Alphonso Mango
                                         <span class="block text-sm text-gray-500">From Rs. 1,400.00</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/ratnagiri-alphonso-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
+                                    <a href="collections/ratnagiri-alphonso-mango.html" class="block text-gray-800 font-semibold hover:text-primary">
                                         Ratnagiri Alphonso Mango
                                         <span class="block text-sm text-gray-500">From Rs. 1,400.00</span>
                                     </a>
@@ -116,13 +119,22 @@
         }
     });
 </script>
-                    <a href="#" class="text-gray-700 hover:text-primary">Saffron</a>
-                    <a href="#" class="text-gray-700 hover:text-primary">Dry Fruits</a>
-                    <a href="#" class="text-gray-700 hover:text-primary">Contact us</a>
+                    <a href="saffron.html" class="text-gray-700 hover:text-primary">Saffron</a>
+                    <a href="dry-fruits.html" class="text-gray-700 hover:text-primary">Dry Fruits</a>
+          <a href="contact.html" class="text-gray-700 hover:text-primary">Contact us</a>
+          <a href="login.html" class="text-gray-700 hover:text-primary">Login</a>
+          <a href="registration.html" class="text-gray-700 hover:text-primary">Register</a>
                 </div>
 
-                <!-- Language Selector -->
-                <div class="hidden lg:block">
+                <!-- Cart and Language -->
+                <div class="hidden lg:flex items-center gap-6">
+                    <!-- Cart Icon -->
+                    <a href="#" class="relative text-gray-700 hover:text-primary" onclick="toggleCart()">
+                        <i class="fas fa-shopping-cart text-xl"></i>
+                        <span id="cartCount" class="absolute -top-2 -right-2 bg-primary text-white text-xs w-5 h-5 rounded-full flex items-center justify-center">0</span>
+                    </a>
+
+                    <!-- Language Selector -->
                     <select id="languageSelector" class="bg-white border border-gray-300 rounded px-2 py-1">
                         <option value="en">English</option>
                         <option value="hi">हिन्दी</option>
@@ -132,12 +144,216 @@
                     </select>
                 </div>
 
-                <!-- Mobile Menu Button -->
-                <div class="lg:hidden">
-                    <button class="text-gray-600">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
+                <!-- Cart Sidebar -->
+                <div id="cartSidebar" class="fixed top-0 right-0 h-full w-96 bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50 overflow-y-auto">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-2xl font-semibold">Your cart</h3>
+                            <div class="flex items-center space-x-4">
+                                <a href="#" class="text-primary underline font-semibold">View cart</a>
+                                <button onclick="toggleCart()" class="text-gray-500 hover:text-gray-700">
+                                    <i class="fas fa-times text-xl"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-lg">Subtotal</span>
+                                <span id="cartTotal" class="text-xl font-bold">₹0.00</span>
+                            </div>
+                            <a href="#" class="text-sm underline mb-2 inline-block">Add order note</a>
+                            <p class="text-xs text-gray-500">Tax included, <a href="#" class="underline">shipping</a> and discounts calculated at checkout.</p>
+                        </div>
+                        <button class="w-full bg-green-500 text-white py-3 rounded-lg font-semibold hover:bg-green-600 transition flex items-center justify-center space-x-3 mb-4">
+                            <span>Buy Now</span>
+                            <div class="flex space-x-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-6" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="Mastercard" class="h-6" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/RuPay_logo.svg" alt="RuPay" class="h-6" />
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/UPI_Logo.svg" alt="UPI" class="h-6" />
+                            </div>
+                        </button>
+                        <p class="text-xs text-gray-400 mb-6">All payment modes available <span class="float-right">Secured by <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Razorpay_logo.svg" alt="Razorpay" class="inline h-4" /></span></p>
+                        <h4 class="text-lg font-semibold mb-4">Products (<span id="cartCountSidebar">0</span>)</h4>
+                        <div id="cartItems" class="space-y-6">
+                            <!-- Cart items will be dynamically inserted here -->
+                        </div>
+                        <h4 class="text-lg font-semibold mt-8 mb-4">You may also like</h4>
+                        <div class="flex items-center space-x-4 overflow-x-auto">
+                            <div class="flex-shrink-0 w-48 bg-gray-100 rounded-lg p-4 flex items-center space-x-4 cursor-pointer">
+                                <img src="https://images.pexels.com/photos/2363345/pexels-photo-2363345.jpeg" alt="Ratnagiri Alphonso Mango" class="w-16 h-16 object-cover rounded" />
+                                <div>
+                                    <p class="font-semibold">Ratnagiri Alphonso Mango (Ratnagiri Hapus Mango)</p>
+                                    <p class="text-sm text-gray-600">From Rs. 1,400.00</p>
+                                </div>
+                            </div>
+                            <!-- Add navigation arrows if needed -->
+                        </div>
+                    </div>
                 </div>
+
+                 <script>
+                     // Update cart count
+                     function updateCartCount() {
+                         const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                         const count = cart.reduce((total, item) => total + item.quantity, 0);
+                         document.getElementById('cartCount').textContent = count;
+                         document.getElementById('cartCountSidebar').textContent = count;
+                     }
+
+                     // Toggle cart sidebar
+                     function toggleCart() {
+                         const sidebar = document.getElementById('cartSidebar');
+                         const isOpen = sidebar.style.transform === 'translateX(0px)';
+                         
+                         if (isOpen) {
+                             sidebar.style.transform = 'translateX(100%)';
+                         } else {
+                             updateCartItems();
+                             sidebar.style.transform = 'translateX(0)';
+                         }
+                     }
+
+                     // Update cart items
+                     function updateCartItems() {
+                         const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                         const cartItems = document.getElementById('cartItems');
+                         const cartTotal = document.getElementById('cartTotal');
+                         
+                         cartItems.innerHTML = '';
+                         let total = 0;
+
+                         cart.forEach((item, index) => {
+                             const itemTotal = item.price * item.quantity;
+                             total += itemTotal;
+
+                             cartItems.innerHTML += `
+                                <div class="flex items-start gap-4">
+                                    <img src="${item.image}" alt="${item.name}" class="w-20 h-20 object-cover rounded" />
+                                    <div class="flex-1">
+                                        <h4 class="font-semibold">${item.name}</h4>
+                                        <p class="text-sm text-gray-600 mb-1">Rs. ${item.price.toFixed(2)}</p>
+                                        <p class="text-sm font-semibold">One Dozen - 12 Mangoes: 1 Dozen</p>
+                                        <p class="text-sm">Grade: 135 to 180 Grams Small but sweet</p>
+                                        <div class="flex items-center mt-2 space-x-2">
+                                            <button onclick="changeQuantity(${index}, -1)" class="bg-black text-white px-3 py-1 rounded">-</button>
+                                            <input type="text" value="${item.quantity}" readonly class="w-10 text-center border border-gray-300 rounded" />
+                                            <button onclick="changeQuantity(${index}, 1)" class="bg-black text-white px-3 py-1 rounded">+</button>
+                                            <button onclick="removeFromCart(${index})" class="text-gray-400 hover:text-red-500 ml-4">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                             `;
+                         });
+
+                         cartTotal.textContent = `₹${total.toFixed(2)}`;
+                     }
+
+                     // Change quantity
+                     function changeQuantity(index, delta) {
+                         let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                         if (!cart[index]) return;
+                         let newQty = cart[index].quantity + delta;
+                         if (newQty < 1) newQty = 1;
+                         cart[index].quantity = newQty;
+                         localStorage.setItem('cart', JSON.stringify(cart));
+                         updateCartCount();
+                         updateCartItems();
+                     }
+
+                     // Remove item from cart
+                     function removeFromCart(index) {
+                         let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                         cart.splice(index, 1);
+                         localStorage.setItem('cart', JSON.stringify(cart));
+                         updateCartCount();
+                         updateCartItems();
+                     }
+
+                     // Initialize cart count
+                     document.addEventListener('DOMContentLoaded', updateCartCount);
+                 </script>
+
+    <!-- Mobile Menu Button -->
+    <div class="lg:hidden">
+        <button id="mobileMenuBtn" class="text-gray-600">
+            <i class="fas fa-bars text-2xl"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="fixed inset-0 bg-gray-900 bg-opacity-50 z-50 hidden">
+        <div class="bg-white h-full w-64 p-4 transform transition-transform duration-300 -translate-x-full">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-bold text-primary">Menu</h3>
+                <button id="closeMobileMenu" class="text-gray-600">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="index.html" class="block text-gray-700 hover:text-primary">Home</a>
+                <div class="relative">
+                    <button class="mobileMangoDrop w-full text-left text-gray-700 hover:text-primary flex items-center justify-between">
+                        <span>Mangoes</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="mobileMangoContent hidden pl-4 mt-2 space-y-2">
+                        <a href="collections/kesar-mango.html" class="block text-gray-700 hover:text-primary">Kesar Mango</a>
+                        <a href="collections/payari-mango.html" class="block text-gray-700 hover:text-primary">Payari Mango</a>
+                        <a href="collections/alphonso-mango.html" class="block text-gray-700 hover:text-primary">Alphonso Mango</a>
+                        <a href="collections/devgad-alphonso-mango.html" class="block text-gray-700 hover:text-primary">Devgad Alphonso</a>
+                        <a href="collections/ratnagiri-alphonso-mango.html" class="block text-gray-700 hover:text-primary">Ratnagiri Alphonso</a>
+                    </div>
+                </div>
+                <a href="saffron.html" class="block text-gray-700 hover:text-primary">Saffron</a>
+                <a href="dry-fruits.html" class="block text-gray-700 hover:text-primary">Dry Fruits</a>
+                <a href="contact.html" class="block text-gray-700 hover:text-primary">Contact us</a>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuContent = mobileMenu.querySelector('.bg-white');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            setTimeout(() => {
+                mobileMenuContent.classList.remove('-translate-x-full');
+            }, 10);
+        });
+
+        function closeMobile() {
+            mobileMenuContent.classList.add('-translate-x-full');
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300);
+        }
+
+        closeMobileMenu.addEventListener('click', closeMobile);
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                closeMobile();
+            }
+        });
+
+        // Mobile Mangoes Dropdown
+        const mobileMangoDrops = document.querySelectorAll('.mobileMangoDrop');
+        mobileMangoDrops.forEach(drop => {
+            drop.addEventListener('click', () => {
+                const content = drop.nextElementSibling;
+                content.classList.toggle('hidden');
+                const icon = drop.querySelector('i');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+    </script>
             </nav>
         </div>
     </header>
@@ -150,8 +366,8 @@
         </div>
         
         <div class="container mx-auto px-4 py-16">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2">
+            <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                <div class="w-full lg:w-1/2">
                     <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
                         100% Authentic Alphonso Mangoes
                     </h1>
@@ -159,15 +375,15 @@
                         Delivered Fresh From Ratnagiri & Devgad
                     </p>
                     <div class="flex gap-4">
-                        <a href="#" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition">
+                        <a href="collections/premium-alphonso-mango-buy-online.html" class="bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition">
                             SHOP NOW
                         </a>
-                        <a href="#" class="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary/10 transition">
+                        <a href="collections/alphonso-mango.html" class="border-2 border-primary text-primary px-8 py-3 rounded-full font-semibold hover:bg-primary/10 transition">
                             Learn More
                         </a>
                     </div>
                 </div>
-                <div class="md:w-1/2">
+                <div class="w-full lg:w-1/2">
                     <img src="//alphonsomango.in/cdn/shop/files/alphonso_mango_4_1.png?v=1743791334&width=1400" 
                          alt="Premium Alphonso Mangoes" 
                          class="w-full rounded-2xl shadow-xl hover:scale-105 transition duration-300">
@@ -179,7 +395,7 @@
     <!-- Features Section -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
                 <!-- Feature 1 -->
                 <div class="text-center">
                     <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -216,7 +432,7 @@
             <h2 class="text-4xl font-bold text-center mb-4">Experience the 2025 Alphonso Mango Season with us</h2>
             <p class="text-gray-600 text-center mb-12">Discover our premium selection of authentic Alphonso mangoes</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 <!-- Product Card 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300">
                     <div class="relative">
@@ -231,7 +447,7 @@
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Ratnagiri Alphonso Mango</h3>
                         <p class="text-gray-600 mb-2">Premium Quality Hapus</p>
                         <p class="text-primary font-semibold mb-4">From Rs. 1,400.00</p>
-                        <a href="#" class="block text-center bg-primary text-white py-3 px-4 rounded-lg hover:bg-primary/90 transition">
+                        <a href="collections/ratnagiri-alphonso-mango.html" class="block text-center bg-primary text-white py-3 px-4 rounded-lg hover:bg-primary/90 transition">
                             View Details
                         </a>
                     </div>
@@ -251,7 +467,7 @@
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Devgad Alphonso Mango</h3>
                         <p class="text-gray-600 mb-2">Direct from Devgad</p>
                         <p class="text-primary font-semibold mb-4">From Rs. 1,400.00</p>
-                        <a href="#" class="block text-center bg-primary text-white py-3 px-4 rounded-lg hover:bg-primary/90 transition">
+                        <a href="collections/devgad-alphonso-mango.html" class="block text-center bg-primary text-white py-3 px-4 rounded-lg hover:bg-primary/90 transition">
                             View Details
                         </a>
                     </div>
@@ -271,7 +487,7 @@
                         <h3 class="text-xl font-semibold mb-2 text-gray-800">Hapus Amba</h3>
                         <p class="text-gray-600 mb-2">Fresh Hapus Mango</p>
                         <p class="text-primary font-semibold mb-4">From Rs. 1,400.00</p>
-                        <a href="#" class="block text-center bg-primary text-white py-3 px-4 rounded-lg hover:bg-primary/90 transition">
+                        <a href="collections/alphonso-mango.html" class="block text-center bg-primary text-white py-3 px-4 rounded-lg hover:bg-primary/90 transition">
                             View Details
                         </a>
                     </div>
@@ -281,14 +497,14 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-4">Why Choose AlphonsoMango.in?</h2>
-            <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-                Choosing us means more than just buying mangoes online; it's an assurance of quality, authenticity, and ethical sourcing.
-            </p>
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-4">Why Choose JamunaAlphonsoMangoes.com?</h2>
+      <p class="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+        Choosing us means more than just buying mangoes online; it's an assurance of quality, authenticity, and ethical sourcing.
+      </p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
                 <div class="bg-orange-50 rounded-2xl p-8">
                     <h3 class="text-2xl font-semibold mb-4">Our Promise</h3>
                     <ul class="space-y-4">
@@ -330,7 +546,7 @@
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-16">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
                 <!-- Company Info -->
                 <div>
                     <h4 class="text-2xl font-semibold mb-6">AlphonsoMango.in</h4>
@@ -340,26 +556,29 @@
                 <!-- Quick Links -->
                 <div>
                     <h4 class="text-xl font-semibold mb-6">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Shop</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
-                    </ul>
+            <ul class="space-y-3">
+              <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+              <li><a href="collections/kesar-mango.html" class="text-gray-400 hover:text-white transition">Mangoes</a></li>
+              <li><a href="saffron.html" class="text-gray-400 hover:text-white transition">Saffron</a></li>
+              <li><a href="dry-fruits.html" class="text-gray-400 hover:text-white transition">Dry Fruits</a></li>
+              <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+              <li><a href="login.html" class="text-gray-400 hover:text-white transition">Login</a></li>
+              <li><a href="registration.html" class="text-gray-400 hover:text-white transition">Register</a></li>
+            </ul>
                 </div>
 
                 <!-- Contact Info -->
                 <div>
                     <h4 class="text-xl font-semibold mb-6">Contact Us</h4>
                     <ul class="space-y-3">
-                        <li class="flex items-center text-gray-400">
-                            <i class="fas fa-phone mr-3"></i>
-                            <span>+91 8286352396</span>
-                        </li>
-                        <li class="flex items-center text-gray-400">
-                            <i class="fas fa-envelope mr-3"></i>
-                            <span>info@alphonsomango.in</span>
-                        </li>
+                <li class="flex items-center text-gray-400">
+                    <i class="fas fa-phone mr-3"></i>
+                    <span>+91-917800044091</span>
+                </li>
+                <li class="flex items-center text-gray-400">
+                    <i class="fas fa-envelope mr-3"></i>
+                    <span>info@jamunaalphonsomangoes.com</span>
+                </li>
                     </ul>
                 </div>
 
@@ -381,9 +600,55 @@
             </div>
 
             <div class="border-t border-gray-800 mt-12 pt-8 text-center">
-                <p class="text-gray-500">&copy; 2025 AlphonsoMango.in. All rights reserved.</p>
+                <p class="text-gray-500">&copy; 2025 JamunaAlphonsoMangoes.com. All rights reserved.</p>
             </div>
         </div>
     </footer>
+  <!-- WhatsApp Chat Button -->
+  <button id="whatsappBtn" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full w-14 h-14 flex items-center justify-center shadow-lg z-50" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp text-2xl"></i>
+  </button>
+
+  <!-- Welcome Popup -->
+  <div id="welcomePopup" class="fixed bottom-20 right-6 bg-white rounded-lg shadow-lg p-4 w-72 max-w-xs hidden z-50">
+    <div class="flex items-center space-x-3 mb-3">
+      <img src="assets/logo.png" alt="Jamuna Alphonso Mangoes Logo" class="h-10 w-10 object-contain" />
+      <h3 class="text-lg font-semibold">Welcome to Jamuna Alphonso Mangoes! 🥭🍋</h3>
+      <button id="closePopup" class="ml-auto text-gray-500 hover:text-gray-700">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <p class="text-sm text-gray-700">
+      We're delighted to have you here! At Jamuna Alphonso Mangoes, our purpose is simple yet special—to bring you the finest, juiciest, and most authentic Alphonso mangoes straight from our orchards. Every mango is handpicked with care to ensure premium quality and unmatched flavor.
+    </p>
+    <p class="text-sm text-gray-700 mt-2">
+      Whether you're looking for a refreshing tropical treat, a delightful gift for loved ones, or simply the joy of savoring nature’s golden goodness, we are here to make your experience exceptional.
+    </p>
+    <p class="text-sm text-gray-700 mt-2">
+      Feel free to ask us anything—we’re happy to help you find the perfect mangoes to suit your needs! Happy indulging, and welcome to a world of sweetness! 🥭✨
+    </p>
+    <a href="https://wa.me/+917800044091" target="_blank" rel="noopener noreferrer" class="mt-4 block bg-green-500 text-white text-center py-2 rounded hover:bg-green-600 transition">
+      Chat on WhatsApp
+    </a>
+  </div>
+
+  <script>
+    const whatsappBtn = document.getElementById('whatsappBtn');
+    const welcomePopup = document.getElementById('welcomePopup');
+    const closePopup = document.getElementById('closePopup');
+
+    whatsappBtn.addEventListener('click', () => {
+      welcomePopup.classList.remove('hidden');
+    });
+
+    closePopup.addEventListener('click', () => {
+      welcomePopup.classList.add('hidden');
+    });
+
+    // Optional: Auto-hide popup after 15 seconds
+    setTimeout(() => {
+      welcomePopup.classList.add('hidden');
+    }, 15000);
+  </script>
 </body>
 </html>

@@ -1,9 +1,12 @@
 
+Built by https://www.blackbox.ai
+
 ---
 
+# AlphonsoMango.in
 
 ## Project Overview
-JamunaAlphonsoMangoes.com is a web application dedicated to selling premium quality Alphonso mangoes online. The platform showcases a user-friendly interface with a rich set of features, providing customers with an effortless shopping experience. It highlights the authenticity and freshness of the mangoes directly sourced from the Ratnagiri and Devgad regions.
+AlphonsoMango.in is a web application dedicated to selling premium quality Alphonso mangoes online. The platform showcases a user-friendly interface with a rich set of features, providing customers with an effortless shopping experience. It highlights the authenticity and freshness of the mangoes directly sourced from the Ratnagiri and Devgad regions.
 
 ## Installation
 To set up this project locally, follow these steps:
@@ -44,7 +47,7 @@ The project utilizes the following dependencies included in the HTML file:
 ```
 
 ### Additional Resources
-- Live online demo can be accessed at (https://jamunaalphonsomangoes.com).
+- Live online demo can be accessed at [AlphonsoMango.in](https://alphonsomango.in).
 
 ## Contributing
 If you would like to contribute to this project, please fork the repository and create a pull request with your proposed changes.
