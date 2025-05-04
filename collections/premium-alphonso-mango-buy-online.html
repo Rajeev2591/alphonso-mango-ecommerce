@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Alphonso Mango Buy Online | AlphonsoMango.in</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f97316',
+                        secondary: '#1f2937'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-2xl font-bold text-primary">AlphonsoMango.in</a>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-4 xl:space-x-8">
+                    <a href="../index.html" class="text-gray-700 hover:text-primary">Home</a>
+                    <a href="../saffron.html" class="text-gray-700 hover:text-primary">Saffron</a>
+                    <a href="../dry-fruits.html" class="text-gray-700 hover:text-primary">Dry Fruits</a>
+                    <a href="../contact.html" class="text-gray-700 hover:text-primary">Contact us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden">
+                    <button class="text-gray-600">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-8">
+                <!-- Product Images -->
+                <div class="w-full lg:w-1/2">
+                    <div class="bg-gray-100 rounded-xl p-4">
+                        <img src="https://images.pexels.com/photos/2363345/pexels-photo-2363345.jpeg" 
+                             alt="Premium Alphonso Mango" 
+                             class="w-full rounded-lg">
+                    </div>
+                </div>
+
+                <!-- Product Details -->
+                <div class="w-full lg:w-1/2">
+                    <h1 class="text-3xl font-bold text-gray-900 mb-4">Premium Alphonso Mango</h1>
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="ml-2 text-gray-600">(50+ Reviews)</span>
+                    </div>
+                    <p class="text-2xl font-bold text-primary mb-4">₹1,400.00</p>
+                    <div class="space-y-4 mb-6">
+                        <p class="text-gray-600">Premium quality Alphonso mangoes sourced directly from Ratnagiri & Devgad farms. Each mango is carefully handpicked to ensure the best taste and quality.</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>100% Natural & Chemical Free</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Fresh from Farm</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Free Shipping Pan India</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="mb-6">
+                        <h3 class="font-semibold mb-2">Select Size</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <button class="border-2 border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition">
+                                1 Dozen (12 Pcs)
+                            </button>
+                            <button class="border-2 border-gray-300 px-4 py-2 rounded-lg hover:border-primary hover:text-primary transition">
+                                2 Dozen (24 Pcs)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Add to Cart -->
+                    <div class="flex gap-4">
+                        <div class="flex-1 flex items-center gap-4">
+                            <div class="flex items-center border border-gray-300 rounded-lg">
+                                <button class="px-4 py-2 text-gray-600 hover:text-primary" onclick="updateQuantity(-1)">-</button>
+                                <input type="number" id="quantity" class="w-16 text-center border-x border-gray-300 py-2" value="1" min="1" max="10">
+                                <button class="px-4 py-2 text-gray-600 hover:text-primary" onclick="updateQuantity(1)">+</button>
+                            </div>
+                            <button onclick="addToCart()" class="flex-1 bg-primary text-white py-3 rounded-lg hover:bg-primary/90 transition">
+                                Add to Cart
+                            </button>
+                        </div>
+                        <button class="w-12 h-12 flex items-center justify-center border-2 border-primary text-primary rounded-lg hover:bg-primary/10 transition">
+                            <i class="fas fa-heart"></i>
+                        </button>
+                    </div>
+
+                    <!-- Cart Notification -->
+                    <div id="cartNotification" class="fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform translate-y-[-100%] opacity-0 transition-all duration-300">
+                        Item added to cart!
+                    </div>
+
+                    <script>
+                        function updateQuantity(change) {
+                            const input = document.getElementById('quantity');
+                            const newValue = parseInt(input.value) + change;
+                            if (newValue >= 1 && newValue <= 10) {
+                                input.value = newValue;
+                            }
+                        }
+
+                        function addToCart() {
+                            const quantity = document.getElementById('quantity').value;
+                            const notification = document.getElementById('cartNotification');
+                            
+                            // Get existing cart or initialize new one
+                            let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                            
+                            // Add item to cart
+                            cart.push({
+                                name: 'Premium Alphonso Mango',
+                                quantity: parseInt(quantity),
+                                price: 1400.00,
+                                image: 'https://images.pexels.com/photos/2363345/pexels-photo-2363345.jpeg'
+                            });
+                            
+                            // Save cart
+                            localStorage.setItem('cart', JSON.stringify(cart));
+                            
+                            // Show notification
+                            notification.style.transform = 'translateY(0)';
+                            notification.style.opacity = '1';
+                            
+                            // Update cart count in header if it exists
+                            const cartCountElement = window.parent.document.getElementById('cartCount');
+                            if (cartCountElement) {
+                                const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                                const count = cart.reduce((total, item) => total + item.quantity, 0);
+                                cartCountElement.textContent = count;
+                            }
+
+                            // Hide notification after 3 seconds
+                            setTimeout(() => {
+                                notification.style.transform = 'translateY(-100%)';
+                                notification.style.opacity = '0';
+                            }, 3000);
+                        }
+
+                        // Prevent manual input of invalid numbers
+                        document.getElementById('quantity').addEventListener('change', function(e) {
+                            const value = parseInt(e.target.value);
+                            if (value < 1) e.target.value = 1;
+                            if (value > 10) e.target.value = 10;
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <!-- Product Description -->
+            <div class="mt-12">
+                <h2 class="text-2xl font-bold mb-4">Product Description</h2>
+                <div class="prose max-w-none">
+                    <p class="mb-4">Experience the authentic taste of Alphonso mangoes, known for their rich, creamy, and non-fibrous pulp. Our mangoes are sourced directly from the premium mango-growing regions of Ratnagiri and Devgad.</p>
+                    <p class="mb-4">Each mango weighs between 200-225 grams and is carefully selected to ensure uniform ripeness and quality. We follow strict quality control measures to deliver only the best mangoes to your doorstep.</p>
+                    <h3 class="text-xl font-semibold mb-2">Storage Instructions:</h3>
+                    <ul class="list-disc pl-6 mb-4">
+                        <li>Store at room temperature until ripe</li>
+                        <li>Once ripe, refrigerate to extend shelf life</li>
+                        <li>Consume within 4-5 days of delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+                <!-- Company Info -->
+                <div>
+                    <h4 class="text-2xl font-semibold mb-6">AlphonsoMango.in</h4>
+                    <p class="text-gray-400 leading-relaxed">Premium Quality Mangoes delivered fresh from farms to your doorstep.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="kesar-mango.html" class="text-gray-400 hover:text-white transition">Mangoes</a></li>
+                        <li><a href="../saffron.html" class="text-gray-400 hover:text-white transition">Saffron</a></li>
+                        <li><a href="../dry-fruits.html" class="text-gray-400 hover:text-white transition">Dry Fruits</a></li>
+                        <li><a href="../contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            <span>+91 8286352396</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>info@alphonsomango.in</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 hover:bg-primary text-gray-400 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary text-gray-400 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-primary text-gray-400 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-500">&copy; 2025 AlphonsoMango.in. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
