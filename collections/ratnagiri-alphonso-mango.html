@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ratnagiri Alphonso Mango - JamunaAlphonsoMangoes.com</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ratnagiri Alphonso Mango | JamunaAlphonsoMangoes.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-white p-8">
-    <h1 class="text-4xl font-bold mb-4">Ratnagiri Alphonso Mango</h1>
-    <p class="text-lg mb-2">Price: Rs. 1,400.00</p>
-    <p>Welcome to the Ratnagiri Alphonso Mango collection page. Here you can find premium quality Ratnagiri Alphonso Mangoes.</p>
-    <a href="../index.html" class="text-primary underline mt-4 inline-block">Back to Home</a>
+<body class="bg-white">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="https://jamunaalphonsomangoes.com/" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-3">
+        <img src="../assets/logo.png" alt="Jamuna Alphonso Mangoes Logo" class="h-12 w-12 object-contain" />
+        <span class="text-3xl font-extrabold text-primary">JamunaAlphonsoMangoes.com</span>
+      </a>
+      <nav class="hidden md:flex space-x-8 items-center text-gray-700">
+        <a href="../index.html" class="font-semibold hover:text-primary transition">Home</a>
+        <a href="../collections/kesar-mango.html" class="font-semibold hover:text-primary transition">Kesar Mango</a>
+        <a href="../collections/payari-mango.html" class="font-semibold hover:text-primary transition">Payari Mango</a>
+        <a href="../collections/alphonso-mango.html" class="font-semibold hover:text-primary transition">Alphonso Mango</a>
+        <a href="../collections/devgad-alphonso-mango.html" class="font-semibold hover:text-primary transition">Devgad Alphonso</a>
+        <a href="../collections/ratnagiri-alphonso-mango.html" class="font-semibold hover:text-primary transition">Ratnagiri Alphonso</a>
+        <a href="../saffron.html" class="font-semibold hover:text-primary transition">Saffron</a>
+        <a href="../dry-fruits.html" class="font-semibold hover:text-primary transition">Dry Fruits</a>
+        <a href="../contact.html" class="font-semibold hover:text-primary transition">Contact us</a>
+        <a href="../login.html" class="font-semibold hover:text-primary transition">Login</a>
+        <a href="../registration.html" class="font-semibold hover:text-primary transition">Register</a>
+      </nav>
+      <button id="mobileMenuBtn" class="md:hidden text-gray-700 focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Product Section -->
+  <main class="container mx-auto px-6 py-12">
+    <div class="flex flex-col lg:flex-row gap-12">
+      <!-- Product Images -->
+      <div class="w-full lg:w-1/2">
+        <img src="https://images.pexels.com/photos/2363345/pexels-photo-2363345.jpeg" alt="Ratnagiri Alphonso Mango" class="w-full rounded-3xl shadow-lg" />
+      </div>
+
+      <!-- Product Details -->
+      <div class="w-full lg:w-1/2">
+        <h1 class="text-4xl font-extrabold mb-4 text-primary">Ratnagiri Alphonso Mango</h1>
+        <p class="text-lg text-gray-700 mb-4">Premium Quality Hapus</p>
+        <p class="text-2xl font-bold text-primary mb-6">₹1,400.00</p>
+
+        <div class="mb-6">
+          <h3 class="font-semibold mb-2">Select Size</h3>
+          <div class="flex gap-4">
+            <button class="border-2 border-primary text-primary px-4 py-2 rounded-lg hover:bg-primary hover:text-white transition">1 Dozen (12 Pcs)</button>
+            <button class="border-2 border-gray-300 px-4 py-2 rounded-lg hover:border-primary hover:text-primary transition">2 Dozen (24 Pcs)</button>
+          </div>
+        </div>
+
+        <button class="bg-primary text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary/90 transition mb-6">Add to Cart</button>
+
+        <div>
+          <h3 class="font-semibold mb-2">Product Description</h3>
+          <p class="text-gray-700">
+            Experience the authentic taste of Ratnagiri Alphonso mangoes, known for their rich, creamy, and non-fibrous pulp. Our mangoes are sourced directly from the premium mango-growing regions of Ratnagiri.
+          </p>
+          <p class="text-gray-700 mt-2">
+            Each mango weighs between 200-225 grams and is carefully selected to ensure uniform ripeness and quality. We follow strict quality control measures to deliver only the best mangoes to your doorstep.
+          </p>
+          <h4 class="font-semibold mt-4 mb-2">Storage Instructions:</h4>
+          <ul class="list-disc pl-6 text-gray-700">
+            <li>Store at room temperature until ripe</li>
+            <li>Once ripe, refrigerate to extend shelf life</li>
+            <li>Consume within 4-5 days of delivery</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const closeMobileMenu = document.getElementById('closeMobileMenu');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('hidden');
+      setTimeout(() => {
+        mobileMenu.querySelector('div').classList.remove('-translate-x-full');
+      }, 10);
+    });
+
+    closeMobileMenu.addEventListener('click', () => {
+      mobileMenu.querySelector('div').classList.add('-translate-x-full');
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300);
+    });
+  </script>
 </body>
 </html>
